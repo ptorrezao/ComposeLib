@@ -7,7 +7,7 @@ services:
     deploy:
       labels:
         - traefik.docker.network=traefik_net
-        - "traefik.frontend.rule=Host:portainer.${TARGET_DOMAIN}"
+        - "traefik.frontend.rule=Host:portainer.${TARGETDOMAIN}"
         - traefik.port=9000
         - traefik.protocol=http
         - traefik.backend=portainer
